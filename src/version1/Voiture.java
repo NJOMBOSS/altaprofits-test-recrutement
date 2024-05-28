@@ -1,4 +1,8 @@
 package version1;
 
-public class Voiture {
+public class Voiture implements Vehicule{
+    @Override
+    public String getType() {
+        return "Voiture";
+    }
 }
