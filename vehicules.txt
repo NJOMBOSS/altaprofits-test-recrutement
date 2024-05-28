@@ -1,0 +1,10 @@
+Total véhicule: 6
+Nombre de sections d’aéroport: 2
+Nombre de sections de port: 2
+Nombre de sections de garage: 2
+Avion
+Helicoptere
+Bateau
+JetSki
+Voiture
+Moto
