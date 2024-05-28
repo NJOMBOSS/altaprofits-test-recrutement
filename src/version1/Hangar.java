@@ -125,5 +125,48 @@ public class Hangar {
 		}
 	}
 
+	/**
+	 * Retourne une liste des véhicules volants (instances de Avion ou Helicoptere).
+	 *
+	 * @return la liste des véhicules volants
+	 */
+	public List<Deplacer> getFlyables() {
+		List<Deplacer> deplaces = new ArrayList<>();
+		for (Vehicule v : vehicules) {
+			if (v instanceof Avion || v instanceof Helicoptere) {
+				deplaces.add(v);
+			}
+		}
+		return deplaces;
+	}
 
+	/**
+	 * Retourne une liste des véhicules roulants (instances de Voiture ou Moto).
+	 *
+	 * @return la liste des véhicules roulants
+	 */
+	public List<Deplacer> getDrivables() {
+		List<Deplacer> roules = new ArrayList<>();
+		for (Vehicule v : vehicules) {
+			if (v instanceof Voiture || v instanceof Moto) {
+				roules.add(v);
+			}
+		}
+		return roules;
+	}
+
+	/**
+	 * Retourne une liste des véhicules navigables (instances de Bateau, JetSki ou AquatiqueAnimal).
+	 *
+	 * @return la liste des véhicules navigables
+	 */
+	public List<Deplacer> getNavigables() {
+		List<Deplacer> flottes = new ArrayList<>();
+		for (Vehicule v : vehicules) {
+			if (v instanceof Bateau || v instanceof JetSki || v instanceof AquatiqueAnimal) {
+				flottes.add(v);
+			}
+		}
+		return flottes;
+	}
 }
